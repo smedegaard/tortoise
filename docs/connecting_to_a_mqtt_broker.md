@@ -9,7 +9,7 @@ open.
 A minimal connection specification looks like this:
 
 ``` elixir
-{ok, _pid} =
+{:ok, _pid} =
   Tortoise.Connection.start_link(
     client_id: HelloWorld,
     server: {Tortoise.Transport.Tcp, host: "localhost", port: 1883},
